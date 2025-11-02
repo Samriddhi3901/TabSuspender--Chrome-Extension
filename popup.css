@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    width: 350px;
+  }
+  
+  .popup {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .stat {
+    flex: 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+    opacity: 0.9;
+  }
+  
+  .section {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: monospace;
+    resize: vertical;
+  }
+  
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .slider {
+    width: 50px;
+    height: 26px;
+    background: #ccc;
+    border-radius: 13px;
+    position: relative;
+    transition: background 0.3s;
+  }
+  
+  .slider::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle input:checked + .slider {
+    background: #667eea;
+  }
+  
+  .toggle input:checked + .slider::after {
+    transform: translateX(24px);
+  }
+  
+  .label-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .save-btn:hover {
+    background: #5568d3;
+  }
+  
+  .save-status {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+  }

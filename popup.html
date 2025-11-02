@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Suspender Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <h1>⚡ Smart Tab Suspender</h1>
+    
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value" id="totalTabs">0</span>
+        <span class="stat-label">Total Tabs</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="suspendedTabs">0</span>
+        <span class="stat-label">Suspended</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="memorySaved">0</span>
+        <span class="stat-label">MB Saved</span>
+      </div>
+    </div>
+    
+    <div class="section">
+      <label class="toggle">
+        <input type="checkbox" id="enabledToggle">
+        <span class="slider"></span>
+        <span class="label-text">Enable Auto-Suspend</span>
+      </label>
+    </div>
+    
+    <div class="section">
+      <label for="suspendTime">Suspend after (minutes):</label>
+      <input type="number" id="suspendTime" min="1" max="120" value="20">
+    </div>
+    
+    <div class="section">
+      <label>Whitelist (one per line):</label>
+      <textarea id="whitelist" rows="5" placeholder="gmail.com&#10;youtube.com&#10;spotify.com"></textarea>
+    </div>
+    
+    <button id="saveBtn" class="save-btn">Save Settings</button>
+    <div id="saveStatus" class="save-status"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
