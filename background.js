@@ -9,7 +9,6 @@ const DEFAULT_SETTINGS = {
 };
 // Track tab activity
 let tabActivity = {};
-
 // Initialize extension
 chrome.runtime.onInstalled.addListener(async () => {
   // Set default settings
