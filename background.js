@@ -19,7 +19,6 @@ chrome.runtime.onInstalled.addListener(async () => {
   // Create periodic alarm (check every minute)
   chrome.alarms.create('checkTabs', { periodInMinutes: 1 });
 });
-
 // Track when tabs are activated
 chrome.tabs.onActivated.addListener(async (activeInfo) => {
   tabActivity[activeInfo.tabId] = Date.now();
