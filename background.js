@@ -7,7 +7,6 @@ const DEFAULT_SETTINGS = {
   whitelist: ['gmail.com', 'youtube.com', 'spotify.com'],
   enabled: true
 };
-
 // Track tab activity
 let tabActivity = {};
 
