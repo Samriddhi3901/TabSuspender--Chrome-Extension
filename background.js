@@ -1,7 +1,6 @@
 // Storage keys
 const SETTINGS_KEY = 'suspenderSettings';
 const TAB_ACTIVITY_KEY = 'tabActivity';
-
 // Default settings
 const DEFAULT_SETTINGS = {
   suspendTime: 20, // minutes
