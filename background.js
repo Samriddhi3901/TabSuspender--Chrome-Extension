@@ -32,7 +32,6 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     await chrome.storage.local.set({ [TAB_ACTIVITY_KEY]: tabActivity });
   }
 });
-
 // Remove tab from tracking when closed
 chrome.tabs.onRemoved.addListener(async (tabId) => {
   delete tabActivity[tabId];
