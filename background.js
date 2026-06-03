@@ -16,7 +16,6 @@ chrome.runtime.onInstalled.addListener(async () => {
   if (!suspenderSettings) {
     await chrome.storage.local.set({ [SETTINGS_KEY]: DEFAULT_SETTINGS });
   }
-  
   // Create periodic alarm (check every minute)
   chrome.alarms.create('checkTabs', { periodInMinutes: 1 });
 });
