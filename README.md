@@ -1,1 +1,1 @@
-TabSuspender--Chrome-Extension
+TabSuspender-Chrome-Extension
